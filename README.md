@@ -1,1 +1,1 @@
-# Git
+# Test project for learning GIT features
