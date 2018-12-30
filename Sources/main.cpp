@@ -1,6 +1,6 @@
-#include <iostream>
+#include <functions.h>
 
 int main(int argc, char* argv[]) {
-	std::cout << "Test git project" << std::endl;
+	print("Lean make-files");
 	return 0;
 }
