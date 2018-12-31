@@ -1,5 +1,5 @@
-#include <functions.h>
+#include "functions.h"
 
-constexpr size_t factorial(constexpr size_t num) {
+size_t factorial(size_t num) {
 	return (num == 0) ? 1 : num * factorial(num - 1);
 }
