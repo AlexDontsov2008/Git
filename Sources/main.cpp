@@ -1,9 +1,13 @@
 #include "functions.h"
 
+void printFactorial(size_t num) {
+	std::cout << "factorial(" << num << "): " << factorial(num) << std::endl;
+}
+
 int main(int argc, char* argv[]) {
 	print("Learn make-files");
-	std::cout << "factorial(5): " << factorial(5) << std::endl;
-	std::cout << "factorial(6): " << factorial(6) << std::endl;
-	std::cout << "factorial(7): " << factorial(7) << std::endl;
+	printFactorial(5);
+	printFactorial(6);
+	printFactorial(7);
 	return 0;
 }
