@@ -1,11 +1,20 @@
-OBJECTS = main.o factorial.o print.o
+INC = Include
+OBJS = main.o factorial.o print.o
 CC = clang++
+CFLAGS = -std=c++14 -O2 -Wall -I $(INC)
 
-git : $(OBJECTS)
-	$(CC) -o git $(OBJECTS)
+git : $(OBJS)
+	$(CC) -o git $(OBJS)
 
-$(OBJECTS) : functions.h
+main.o: main.cpp
+	$(CC) -c main.cpp $(CFLAGS)
+
+factorial.o: factorial.cpp
+	$(CC) -c factorial.cpp $(CFLAGS)
+
+print.o: print.cpp
+	$(CC) -c print.cpp $(CFLAGS)
 
 .PHONY : clean
 clean :
-	rm git $(OBJECTS)
+	rm git $(OBJS)
