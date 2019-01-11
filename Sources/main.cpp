@@ -9,5 +9,7 @@ int main(int argc, char* argv[]) {
 	printFactorial(5);
 	printFactorial(6);
 	printFactorial(7);
+	printFactorial(8);
+	print("Add new feature");
 	return 0;
 }
