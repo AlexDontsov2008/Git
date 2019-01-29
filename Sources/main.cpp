@@ -10,6 +10,7 @@ int main(int argc, char* argv[]) {
 	printFactorial(6);
 	printFactorial(7);
 	printFactorial(8);
+	printFactorial(9);
 	print("Add new feature");
 	return 0;
 }
