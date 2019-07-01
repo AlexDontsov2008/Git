@@ -13,5 +13,6 @@ int main(int argc, char* argv[]) {
 	printFactorial(8);
 	printFactorial(9);
 	print("Add new feature");
+	std::cout << "5 + 6 = " << summ(5, 6) << std::endl;
 	return 0;
 }
