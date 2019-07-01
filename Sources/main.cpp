@@ -1,5 +1,6 @@
 #include "functions.h"
 
+// This function print factorial of the passed num
 void printFactorial(size_t num) {
 	std::cout << "factorial(" << num << "): " << factorial(num) << std::endl;
 }
