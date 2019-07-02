@@ -1,5 +1,5 @@
 INC = Include
-OBJS = main.o factorial.o print.o multiply.o
+OBJS = main.o factorial.o print.o multiply.o summ.o
 CC = clang++
 CFLAGS = -std=c++14 -O2 -Wall -I $(INC)
 
@@ -17,6 +17,9 @@ print.o: print.cpp
 
 multiply.o: multiply.cpp
 	$(CC) -c multiply.cpp $(CFLAGS)
+
+summ.o: summ.cpp
+	$(CC) -c summ.cpp $(CFLAGS)
 
 .PHONY : clean
 clean :

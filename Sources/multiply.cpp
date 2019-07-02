@@ -9,8 +9,3 @@ size_t multiply(size_t a, size_t b)
 	}
 	return result;
 }
-
-size_t summ(size_t a, size_t b)
-{
-	return a + b;
-}
