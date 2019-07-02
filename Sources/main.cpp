@@ -1,5 +1,13 @@
 #include "functions.h"
 
+size_t divide(size_t a, size_t b)
+{
+	if (b == 0)
+		return -1;
+
+	return a / b;
+}
+
 // This function print factorial of the passed num
 void printFactorial(size_t num) {
 	std::cout << "factorial(" << num << "): " << factorial(num) << std::endl;
